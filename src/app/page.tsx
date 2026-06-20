@@ -67,18 +67,11 @@ export default function Home() {
             <Reveal delay={0.1}>
               <div className="about__aside">
                 <figure className="about__photo">
-                  {/* PHOTO: replace this .about__photo-ph block with
-                      <img src="/assets/rudra.jpg" alt="Rudra Pratap Singh" />
-                      The duotone grade + IR-on-hover are applied by CSS. */}
-                  <div className="about__photo-ph">
-                    <svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true">
-                      <path d="M12 12.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4.5 20a7.5 7.5 0 0 1 15 0" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-                    </svg>
-                    <span>add photo</span>
-                  </div>
+                  {/* Muted color grade + full-color reveal on hover, applied by CSS. */}
+                  <img src="/assets/rudra.jpg" alt="Rudra Pratap Singh" width={800} height={1000} />
                   <figcaption className="about__photo-cap">
                     <span>Rudra · IIT Roorkee</span>
-                    <em>hover ▸ IR</em>
+                    <em>hover ▸ color</em>
                   </figcaption>
                 </figure>
                 <ul className="about__facts">

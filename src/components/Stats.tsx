@@ -51,7 +51,7 @@ const STATS = [
   { num: <CountUp to={4563} prefix="#" />, label: <>JEE Advanced 2021 rank<br /><em>out of 1,51,000</em></> },
   { num: <CountUp to={1551} />, label: <>Codeforces Specialist<br /><em>peak rating</em></> },
   { num: <>0.25<span className="stat__unit">%</span></>, label: <>Code With Cisco<br /><em>national finalist</em></> },
-  { num: <>MS<span className="stat__unit"> · MnC</span></>, label: <>Math &amp; Computing<br /><em>IIT Roorkee · 2026</em></> },
+  { num: <>BS-MS<span className="stat__unit"> · MnC</span></>, label: <>Math &amp; Computing<br /><em>IIT Roorkee · 2026</em></> },
 ];
 
 export default function Stats() {

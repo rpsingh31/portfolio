@@ -60,7 +60,7 @@ export default function Hero() {
         </p>
 
         <p className="hero__sub">
-          MS in Mathematics &amp; Computing, IIT Roorkee. Most of my time goes to{" "}
+          BS-MS in Mathematics &amp; Computing, IIT Roorkee. Most of my time goes to{" "}
           <span className="tag-inline v">Applied AI</span> and the{" "}
           <span className="tag-inline">DevOps</span> that ships it.
         </p>

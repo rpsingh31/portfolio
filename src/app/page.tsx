@@ -45,7 +45,7 @@ export default function Home() {
           <div className="about__grid">
             <Reveal className="about__lead">
               <p>
-                I finished my <strong>MS in Mathematics &amp; Computing</strong> at{" "}
+                I finished my <strong>BS-MS in Mathematics &amp; Computing</strong> at{" "}
                 <strong>IIT Roorkee</strong>, and these days I&apos;m a full-time{" "}
                 <strong>Lead Engineer at Milk Inc</strong>. The work I like lives in the
                 messy middle between research and production. Right now that&apos;s mostly

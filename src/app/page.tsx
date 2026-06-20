@@ -3,6 +3,8 @@ import SpectralField from "@/components/SpectralField";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import Stack from "@/components/Stack";
+import GitHubActivity from "@/components/GitHubActivity";
 import Projects from "@/components/Projects";
 import Reveal from "@/components/Reveal";
 
@@ -24,7 +26,7 @@ export default function Home() {
         <Hero />
 
         {/* STAT INSTRUMENT PANEL */}
-        <section className="section" style={{ paddingTop: 0 }} aria-label="Highlights">
+        <section className="section section--stats" aria-label="Highlights">
           <Reveal>
             <Stats />
           </Reveal>
@@ -57,7 +59,9 @@ export default function Home() {
                 obsess over the stuff that&apos;s easy to skip, like edge cases and latency
                 and whether the thing is actually correct. A big part of my job now is{" "}
                 <strong>Applied AI</strong>{" "}and the infrastructure that keeps it
-                running, and I&apos;m still chasing the next level on both.
+                running, and I&apos;m still chasing the next level on both. Away from the
+                keyboard I&apos;m usually watching football or an F1 race, getting
+                competitive over table tennis, or planning the next trip.
               </p>
             </Reveal>
             <Reveal delay={0.1}>
@@ -81,7 +85,7 @@ export default function Home() {
                   <li><span className="k">Now</span><span className="v">Lead Engineer at Milk Inc (full-time)</span></li>
                   <li><span className="k">Focus</span><span className="v">Applied AI, backend, DevOps / infra</span></li>
                   <li><span className="k">Base</span><span className="v">India, shipping to users in Japan</span></li>
-                  <li><span className="k">Also</span><span className="v">Cup Captain for debate &amp; improv comedy</span></li>
+                  <li><span className="k">Off-hours</span><span className="v">Football &amp; F1, table tennis, and travel</span></li>
                 </ul>
               </div>
             </Reveal>
@@ -100,8 +104,11 @@ export default function Home() {
             <Reveal>
               <div className="tl">
                 <div className="tl__meta">
+                  <a className="tl__brand" href="https://invisibleworld.co.jp/en/" target="_blank" rel="noopener" aria-label="Milk Inc website">
+                    <img src="/assets/milk-mark.png" alt="Milk Inc logo" />
+                  </a>
+                  <a className="tl__org" href="https://invisibleworld.co.jp/en/" target="_blank" rel="noopener">Milk Inc</a>
                   <span className="tl__date">Jun 2025 – Present</span>
-                  <span className="tl__org">Milk Inc</span>
                 </div>
                 <div className="tl__body">
                   <h3>Lead Engineer <span className="tl__tag">Full Stack</span></h3>
@@ -117,8 +124,11 @@ export default function Home() {
             <Reveal delay={0.08}>
               <div className="tl">
                 <div className="tl__meta">
+                  <a className="tl__brand" href="https://www.deecogs.com/" target="_blank" rel="noopener" aria-label="DeeCogs Technologies website">
+                    <img src="/assets/deecogs-mark.png" alt="DeeCogs Technologies logo" />
+                  </a>
+                  <a className="tl__org" href="https://www.deecogs.com/" target="_blank" rel="noopener">DeeCogs Technologies</a>
                   <span className="tl__date">Feb 2025 – Aug 2025</span>
-                  <span className="tl__org">DeeCogs Technologies</span>
                 </div>
                 <div className="tl__body">
                   <h3>AI Engineer <span className="tl__tag">Intern</span></h3>
@@ -152,23 +162,21 @@ export default function Home() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="stack__grid">
-              <div className="stack__group">
-                <h3>Languages</h3>
-                <ul><li>Python</li><li>C++</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li></ul>
-              </div>
-              <div className="stack__group">
-                <h3>AI / ML</h3>
-                <ul><li>PyTorch</li><li>LangChain</li><li>Google Gemini</li><li>Google ADK</li><li>MMPose</li><li>RTMLib</li><li>FAISS</li></ul>
-              </div>
-              <div className="stack__group">
-                <h3>Web / Backend</h3>
-                <ul><li>FastAPI</li><li>Next.js</li><li>React</li><li>Node</li><li>SQLAlchemy</li><li>Celery</li><li>Supabase</li><li>PostgreSQL</li></ul>
-              </div>
-              <div className="stack__group">
-                <h3>DevOps / Tools</h3>
-                <ul><li>Docker</li><li>AWS</li><li>GitHub Actions</li><li>CI/CD</li><li>Redis</li><li>Git</li><li>Linux</li><li className="learning">Kubernetes →</li></ul>
-              </div>
+            <Stack />
+          </Reveal>
+        </section>
+
+        {/* GITHUB ACTIVITY */}
+        <section className="section" id="github">
+          <Reveal>
+            <div className="section__head">
+              <p className="section__kicker">Activity</p>
+              <h2 className="section__title">On GitHub</h2>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className="ghcard">
+              <GitHubActivity />
             </div>
           </Reveal>
         </section>

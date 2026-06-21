@@ -258,8 +258,9 @@ code {
 .tl__brand img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; opacity: 0.88; transition: opacity 0.25s var(--ease-out); }
 .tl__brand:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--crimson) 38%, var(--line-2)); background: var(--surface-2); }
 .tl__brand:hover img { opacity: 1; }
-.tl__org { font-family: var(--display); font-weight: 600; font-size: 1.2rem; color: var(--crimson-2); width: fit-content; transition: color 0.2s var(--ease-out); }
-a.tl__org:hover { color: var(--crimson); }
+.tl__org { font-family: var(--display); font-weight: 600; font-size: 1.2rem; color: var(--crimson-2); width: fit-content; display: inline-flex; align-items: center; gap: 0.3rem; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--crimson) 35%, transparent); text-underline-offset: 3px; transition: color 0.2s var(--ease-out), gap 0.2s var(--ease-out); }
+.tl__org span { color: var(--crimson); font-size: 0.85em; }
+a.tl__org:hover { color: var(--crimson); gap: 0.5rem; text-decoration-color: var(--crimson); }
 .tl__date { font-family: var(--mono); font-size: 0.82rem; color: var(--muted); }
 .tl__body h3 { font-family: var(--display); font-weight: 600; font-size: 1.35rem; color: var(--ink); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
 .tl__tag { font-family: var(--mono); font-size: 0.66rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--violet); border: 1px solid color-mix(in srgb, var(--violet) 45%, transparent); padding: 0.2rem 0.55rem; border-radius: 6px; }
@@ -312,9 +313,12 @@ a.tl__org:hover { color: var(--crimson); }
 .contact__inner { max-width: 720px; margin: 0 auto; }
 .contact__title { font-family: var(--display); font-weight: 600; font-size: clamp(2.1rem, 1.4rem + 4vw, 4rem); line-height: 1.02; letter-spacing: -0.035em; color: var(--ink); margin: 0.6rem 0 1.4rem; text-wrap: balance; }
 .contact__lead { color: var(--muted); max-width: 46ch; margin: 0 auto 2rem; }
-.contact__mail { display: inline-block; font-family: var(--mono); font-size: clamp(1rem, 0.8rem + 1.5vw, 1.6rem); color: var(--crimson-2); padding-bottom: 4px; position: relative; margin-bottom: 2.5rem; word-break: break-all; }
-.contact__mail::after { content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background: var(--line-2); transition: background 0.3s var(--ease-out); }
-.contact__mail:hover::after { background: var(--spectrum); }
+.contact__mail { display: inline-flex; flex-direction: column; align-items: center; gap: 0.55rem; background: none; border: 0; padding: 0; cursor: pointer; margin-bottom: 2.5rem; }
+.contact__mail > span { font-family: var(--mono); font-size: clamp(1rem, 0.8rem + 1.5vw, 1.6rem); color: var(--crimson-2); padding-bottom: 4px; position: relative; word-break: break-all; }
+.contact__mail > span::after { content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background: var(--line-2); transition: background 0.3s var(--ease-out); }
+.contact__mail:hover > span::after, .contact__mail:focus-visible > span::after { background: var(--spectrum); }
+.contact__copy { font-family: var(--mono); font-size: 0.7rem; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); transition: color 0.2s var(--ease-out); }
+.contact__copy[data-copied="true"] { color: var(--crimson); }
 .contact__socials { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.6rem; }
 .contact__socials a { font-family: var(--mono); font-size: 0.88rem; color: var(--muted); transition: color 0.2s var(--ease-out); }
 .contact__socials a:hover { color: var(--ink); }

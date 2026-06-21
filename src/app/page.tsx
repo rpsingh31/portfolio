@@ -6,6 +6,7 @@ import Stats from "@/components/Stats";
 import Stack from "@/components/Stack";
 import GitHubActivity from "@/components/GitHubActivity";
 import Projects from "@/components/Projects";
+import CopyEmail from "@/components/CopyEmail";
 import Reveal from "@/components/Reveal";
 
 export default function Home() {
@@ -45,7 +46,7 @@ export default function Home() {
           <div className="about__grid">
             <Reveal className="about__lead">
               <p>
-                I finished my <strong>Integrated BS-MS in Mathematics &amp; Computing</strong> at{" "}
+                I finished my <strong>BS-MS in Mathematics &amp; Computing</strong> at{" "}
                 <strong>IIT Roorkee</strong>, and these days I&apos;m a full-time{" "}
                 <strong>Lead Engineer at Milk Inc</strong>. The work I like lives in the
                 messy middle between research and production. Right now that&apos;s mostly
@@ -100,7 +101,7 @@ export default function Home() {
                   <a className="tl__brand" href="https://invisibleworld.co.jp/en/" target="_blank" rel="noopener" aria-label="Milk Inc website">
                     <img src="/assets/milk-mark.png" alt="Milk Inc logo" />
                   </a>
-                  <a className="tl__org" href="https://invisibleworld.co.jp/en/" target="_blank" rel="noopener">Milk Inc</a>
+                  <a className="tl__org" href="https://invisibleworld.co.jp/en/" target="_blank" rel="noopener">Milk Inc <span aria-hidden="true">↗</span></a>
                   <span className="tl__date">Jun 2025 – Present</span>
                 </div>
                 <div className="tl__body">
@@ -120,7 +121,7 @@ export default function Home() {
                   <a className="tl__brand" href="https://www.deecogs.com/" target="_blank" rel="noopener" aria-label="DeeCogs Technologies website">
                     <img src="/assets/deecogs-mark.png" alt="DeeCogs Technologies logo" />
                   </a>
-                  <a className="tl__org" href="https://www.deecogs.com/" target="_blank" rel="noopener">DeeCogs Technologies</a>
+                  <a className="tl__org" href="https://www.deecogs.com/" target="_blank" rel="noopener">DeeCogs Technologies <span aria-hidden="true">↗</span></a>
                   <span className="tl__date">Feb 2025 – Aug 2025</span>
                 </div>
                 <div className="tl__body">
@@ -181,7 +182,7 @@ export default function Home() {
               <p className="section__kicker" style={{ justifyContent: "center" }}>Contact</p>
               <h2 className="contact__title">Let&apos;s build something that actually ships.</h2>
               <p className="contact__lead">Open to AI / software roles and collaborations. The fastest way to reach me is email.</p>
-              <a href="mailto:rpsingh31.work@gmail.com" className="contact__mail">rpsingh31.work@gmail.com</a>
+              <CopyEmail />
               <ul className="contact__socials">
                 <li><a href="https://github.com/rpsingh31" target="_blank" rel="noopener">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/rudra-d31-m08-y2003/" target="_blank" rel="noopener">LinkedIn</a></li>

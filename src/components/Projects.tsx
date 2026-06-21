@@ -23,7 +23,7 @@ const PROJECTS: Project[] = [
     role: "Real-time logistics marketplace",
     desc: "A load-bidding platform: shippers post loads, truckers bid live, and the lowest bid wins the instant it lands. WebSocket bidding rooms, JWT-secured REST APIs, and a SuperAdmin dashboard for approvals and oversight.",
     tags: ["WebSockets", "Node / Express", "JWT", "REST", "Real-time"],
-    link: "https://github.com/rpsingh31",
+    link: "https://github.com/rpsingh31/TruckNet",
     linkLabel: "Source",
     wide: true,
   },
@@ -33,7 +33,7 @@ const PROJECTS: Project[] = [
     role: "Retrieval-augmented chatbot",
     desc: "A RAG chatbot for restaurant Q&A on LangChain + Hugging Face models, served via Streamlit. Automated scraping with Selenium/BeautifulSoup and a FAISS vector store over sentence-transformer embeddings.",
     tags: ["LangChain", "RAG", "FAISS", "Streamlit"],
-    link: "https://github.com/rpsingh31",
+    link: "https://github.com/rpsingh31/Restaurant-RAG",
     linkLabel: "Source",
   },
   {
@@ -48,7 +48,7 @@ const PROJECTS: Project[] = [
       </>
     ),
     tags: ["Next.js", "LangChain", "Gemini", "MongoDB"],
-    link: "https://github.com/rpsingh31",
+    link: "https://github.com/rpsingh31/LangChain-Email-Generator",
     linkLabel: "Source",
   },
   {

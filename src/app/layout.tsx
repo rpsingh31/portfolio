@@ -21,7 +21,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Rudra Pratap Singh · AI Engineer & Full-Stack Developer",
   description:
-    "Rudra Pratap Singh, AI Engineer and Full-Stack Developer. Lead Engineer at Milk Inc, building production AI and hyperspectral systems. MS in Mathematics & Computing, IIT Roorkee.",
+    "Rudra Pratap Singh, AI Engineer and Full-Stack Developer. Lead Engineer at Milk Inc, building production AI and hyperspectral systems. BS-MS in Mathematics & Computing, IIT Roorkee.",
   authors: [{ name: "Rudra Pratap Singh" }],
   openGraph: {
     type: "website",
